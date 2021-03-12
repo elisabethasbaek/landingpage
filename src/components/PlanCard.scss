@@ -1,0 +1,102 @@
+@import "../variables";
+
+.planCard{
+    border: 1px solid hsl(0,0%,90%);
+    margin: 2rem 0;
+    background-color: white;
+
+    &__title{
+        background: $primaryColor;
+        color: $backgroundColor;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        .title__heading{
+            color: $secondaryColor;
+            text-transform: uppercase;
+            border-bottom: 2px solid $secondaryColor;
+            padding: 0.7rem 0;
+            max-width: 80%;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        .title__summary{
+            padding: 0.5rem 0;
+            margin: 0 auto;
+            font-weight: 600;
+            max-width: 80%;
+            
+        }
+
+        .title__price{
+            font-size: 300%;
+            font-weight: 600;
+            margin: 0;
+            line-height: 90%;
+
+            &::first-letter{
+                font-size: 40%;
+                vertical-align: top;
+            }
+        }
+
+        .title__conditions{
+            margin: 0.5rem 0 0.2rem 0;
+            font-weight: 600;
+            font-size: 80%;
+            line-height: 150%;
+        }
+
+        .title__link{
+            background: linear-gradient($secondaryColor, $primaryColor);
+            color: $backgroundColor;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            font-weight: 600;
+            display: inline-block;
+            transform: translateY(1rem);
+
+            &--caps{
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__features{
+        background-color: hsl(0,0%,100%);
+        padding: 1rem;
+        -min-height: 55vh;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        .features__heading{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 100%;
+            padding-top: 0.5rem;
+        }
+
+        .featured__getfrom{
+            font-size: 80%;
+            color: hsl(0,0%,30%);
+            font-weight: 600;
+        }
+
+        .features__list{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            .list__item{
+                margin: 0.5rem 0;
+                padding: 0;
+                font-size: $fontSizeFormula;
+                color: hsl(0, 0%, 30%);
+            }
+        }
+    }
+}

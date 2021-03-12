@@ -1,0 +1,32 @@
+@import "../variables";
+
+.primaryNavigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: $primaryColor;
+    background-color: $primaryColor;
+
+    &__brand{
+        color: $backgroundColor;
+        text-decoration: none;
+    }
+
+    &__menu{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__menuLink{
+        text-decoration: none;
+        color: $backgroundColor;
+        padding: 0 1rem;
+    }
+
+    &__menuLink:hover{
+        font-weight: bold;
+    }
+}

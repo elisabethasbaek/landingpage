@@ -1,0 +1,11 @@
+@import "variables";
+
+body,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: $fontStack;
+    font-size: $fontSizeFormula;
+    background-color: $backgroundColor;
+    color: $textColor;
+}
