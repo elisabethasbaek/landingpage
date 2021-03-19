@@ -6,7 +6,12 @@ export default function CarouselItem({image, copy, ctaLink, ctaCopy}){
             <img src={image} alt="" className="carouselItem__image" />
             <section className="carouselItem__content">
                 <p className="carouselItem__copy">{copy}</p>
-                <a href={ctaLink} className="carouselItem__CTA">{ctaCopy}</a>
+                <a 
+                    href={ctaLink}
+                    className="carouselItem__CTA"
+                    //eslint-disable-next-line
+                    onclick={gtag("event", "cta", ctaLink)}
+                >{ctaCopy}</a>
             </section>
         </article>
     );

@@ -8,4 +8,10 @@ html{
     font-size: $fontSizeFormula;
     background-color: $backgroundColor;
     color: $textColor;
+
+    &.modal--open{
+        height: 100vh;
+        overflow-y: hidden;
+    }
 }
+
